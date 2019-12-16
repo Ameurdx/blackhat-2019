@@ -13,7 +13,7 @@ spec:
     runAsGroup: 132
     fsGroup: 1000
   containers:
-  - image: quay.io/mauilion/dind:master
+  - image: docker.io/coldwater/dind:master
     name: dind
     resources: {}
     volumeMounts:
@@ -26,7 +26,7 @@ spec:
         drop:
         - all
   dnsPolicy: ClusterFirst
-  nodeName: lynx
+  nodeName: dreamhouse
   volumes:
   - hostPath:
       path: /var/run/docker.sock

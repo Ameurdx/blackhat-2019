@@ -7,7 +7,7 @@ metadata:
   name: dind
 spec:
   containers:
-  - image: quay.io/mauilion/dind:master
+  - image: docker.io/coldwater/dind:master
     name: dind
     resources: {}
     securityContext:

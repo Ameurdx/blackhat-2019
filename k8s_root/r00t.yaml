@@ -7,15 +7,15 @@ metadata:
 spec:
   containers:
   - command:
-    - nsenter # super powerful
-    - --mount=/proc/1/ns/mnt # mount mount namespace of the underlying node
+    - nsenter # super powerful tool that allows you to enter any namespace!
+    - --mount=/proc/1/ns/mnt # mount namespace of the underlying node
     - --
     - /bin/sleep
     - 99d
     image: alpine:3.7
-    name: lol
+    name: get-out
     securityContext:
-      privileged: true  #crazy powers engage!
+      privileged: true  # gives you access to every system call that's available to the Linux kernel!
   dnsPolicy: ClusterFirst
-  hostPID: true  #gives us what's needed to enumerate all the processes with nsenter
-  nodeName: lynx #host to do this to.
+  hostPID: true  # gives us what we need to enumerate all the processes with nsenter
+  nodeName: dreamhouse # our host to do this to

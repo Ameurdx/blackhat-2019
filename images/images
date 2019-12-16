@@ -1,4 +1,4 @@
-quay.io/mauilion/dind:master
+docker.io/coldwater/dind:master
 calico/cni:v3.8.1
 calico/pod2daemon-flexvol:v3.8.1
 calico/node:v3.8.1
