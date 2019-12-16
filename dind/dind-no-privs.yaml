@@ -10,7 +10,7 @@ metadata:
 spec:
   securityContext:
     runAsUser: 1000
-    runAsGroup: 132
+    runAsGroup: 124
     fsGroup: 1000
   containers:
   - image: docker.io/coldwater/dind:master
