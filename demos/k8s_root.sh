@@ -37,8 +37,7 @@ clear
 
 pe "vim k8s_root/r00t.yaml"
 pe "kubectl apply -f k8s_root/r00t.yaml"
-pe "kubectl get pods -A"
-pe "kubectl exec -it r00t -- hostname"
+pe "kubectl get pods -A -o wide"
 pe "kubectl exec -it r00t -- nsenter --help"
 p "How is a pod actually configured? Let's use nsenter to find out!"
 p "First, let's find the PID of an nginx process"
